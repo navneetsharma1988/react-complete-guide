@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import classes from './Person.css';
 import withClass from '../../../hoc/withClass';
-import Aux from '../../../hoc/Aux';
+import Aux from '../../../hoc/_Aux';
 
 class Person extends Component {
     constructor( props ) {
