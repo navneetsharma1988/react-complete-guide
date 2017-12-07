@@ -3,9 +3,9 @@ import React from 'react';
 import Aux from '../../../hoc/_Aux';
 import Button from '../../UI/Button/Button';
 
-const orderSumamry = (props) => {
-    const ingredientSummary = Object.keys(props.ingredients)
-        .map(igKey => {
+const orderSummary = ( props ) => {
+    const ingredientSummary = Object.keys( props.ingredients )
+        .map( igKey => {
             return (
                 <li key={igKey}>
                     <span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {props.ingredients[igKey]}
@@ -15,7 +15,7 @@ const orderSumamry = (props) => {
     return (
         <Aux>
             <h3>Your Order</h3>
-            <p>A delicius burger with the following ingredients:</p>
+            <p>A delicious burger with the following ingredients:</p>
             <ul>
                 {ingredientSummary}
             </ul>
@@ -27,4 +27,4 @@ const orderSumamry = (props) => {
     );
 };
 
-export default orderSumamry;
+export default orderSummary;

@@ -1,5 +1,9 @@
 import React from 'react';
 
-const toolbar = (props) => {
+const toolbar = (props) => (
+    
 
-}
+);
+
+
+export default toolbar;
